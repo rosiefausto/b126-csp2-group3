@@ -1,6 +1,6 @@
 package com.petfoodmonitoring.app;
 
-import com.petfoodmonitoring.app.db.DBConnection;
+import com.petfoodmonitoring.app.config.DBConnection;
 import java.sql.Connection;
 
 public class Main {

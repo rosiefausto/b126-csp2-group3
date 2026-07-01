@@ -1,4 +1,4 @@
-package com.petfoodmonitoring.app.db;
+package com.petfoodmonitoring.app.config;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
