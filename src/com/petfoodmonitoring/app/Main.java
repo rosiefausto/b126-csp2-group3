@@ -1,26 +1,14 @@
 package com.petfoodmonitoring.app;
 
-import com.petfoodmonitoring.app.config.DBConnection;
-import java.sql.Connection;
+import com.petfoodmonitoring.app.controller.UserController;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Connection conn = DBConnection.getConnection();
+        UserController controller = new UserController();
 
-        if (conn != null) {
+        controller.start();
 
-            System.out.println("----------------------------");
-            System.out.println("Connection Test Successful!");
-            System.out.println("----------------------------");
-
-        } else {
-
-            System.out.println("----------------------------");
-            System.out.println("Connection Test Failed!");
-            System.out.println("----------------------------");
-
-        }
     }
 }
