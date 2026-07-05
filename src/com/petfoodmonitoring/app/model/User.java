@@ -80,5 +80,14 @@ public class User {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
+    public String getFullName() {
+        if (lastName == null || lastName.trim().isEmpty()) {
+            return firstName;
+        }
+
+        return firstName + " " + lastName;
+    }
 }
+    
     
